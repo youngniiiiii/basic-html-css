@@ -1,1 +1,24 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 관련 요소</title>
+  </head>
+  <body>
+    <h1>폼 관련 요소</h1>
+    <form action="서버 URL" method="mail" id="searchForm">
+      <fieldset>
+        <legend>검색</legend>
+        <div>
+          <!-- 명시적 레이블링 -->
+          <label for="search">자료검색</label>
+          <input id="search" type="text" placeholder="검색어" />
+        </div>
+      </fieldset>
+    </form>
+    <!-- 폼에 아이디주면 버튼이 밖에 있어도 가능해졌다. -->
+    <button type="submit" form="searchFome">검색</button>
+  </body>
+</html>
