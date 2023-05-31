@@ -1,1 +1,80 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블 관련 요소</title>
+  </head>
+  <body>
+    <h1>과목별 테스트 결과</h1>
+    <p id="tableEesc">'함께 성장하는 바른 교육' 이듬(EUID)'과 멋사가 만났습니다.</p>
+
+    <table border="1" aria-describedby="tableEesc" summary="표의 요약정보">
+      <tr>
+        <th>과목명</th>
+        <th id="html">HTML/CSS</th>
+        <th id="js">Javascript</th>
+        <th id="react">React</th>
+      </tr>
+
+      <tr>
+        <th id="ma01">김미리</th>
+        <!-- 스크린 리더가 이렇게 읽어줌 : html,css, 김미리 100 -->
+        <td headers="html ma01">100점</td>
+        <td headers="js ma02">95점</td>
+        <td headers="react ma03">98점</td>
+      </tr>
+
+      <tr>
+        <th id="ma02">임시연</th>
+        <td>20점</td>
+        <td>30점</td>
+        <td>10점</td>
+      </tr>
+
+      <tr>
+        <th id="ma03">김태진</th>
+        <td>100점</td>
+        <td>95점</td>
+        <td>98점</td>
+      </tr>
+    </table>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>과목명</th>
+          <th scope="col">HTML/CSS</th>
+          <th scope="col">Javascript</th>
+          <th scope="col">React</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">금윤호</th>
+          <td>100점</td>
+          <td>95점</td>
+          <td>98점</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th scope="row">범쌤</th>
+          <td>20점</td>
+          <td>30점</td>
+          <td>10점</td>
+        </tr>
+      </tfoot>
+
+      <tr>
+        <th scope="row">홍길동</th>
+        <td>100점</td>
+        <td>95점</td>
+        <td>98점</td>
+      </tr>
+    </table>
+  </body>
+</html>
