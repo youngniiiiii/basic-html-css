@@ -1,4 +1,32 @@
 body {
-  font-family: "SUIT";
+  font-family: 'SUIT';
   font-weight: 300;
+}
+
+.menu {
+  color: gray;
+  font-size: 36px;
+  border: 5px green dashed;
+}
+
+/* .menu li a {
+  color: inherit;
+} 
+
+칼라는 강제상속 해야하고
+폰트는 자동으로 상속되는 이유는??
+
+에이전트 스타일이 지정된적이 없기 때문 
+
+*/
+.menu .pick {
+  background-color: yellow;
+}
+
+.menu li {
+  background-color: pink;
+}
+
+.menu a {
+  color: inherit;
 }
